@@ -47,6 +47,15 @@ public class ReportController {
 
         }
         countStatVOList=cache.values().stream().collect(Collectors.toList());
+        if (selectFilterVO.isTotal()){
+            CountStatVO totalStat=new CountStatVO();
+            totalStat.setCol("总数");
+            countStatVOList.stream().forEach(data->{
+                totalStat.setCnt(data.getCnt()+totalStat.getCnt());
+                totalStat.setCnt2(data.getCnt2()+totalStat.getCnt2());
+            });
+            countStatVOList.add(totalStat);
+        }
         chartResponse.setAxis(countStatVOList.stream().map(CountStatVO::getCol).collect(Collectors.toList()));
         chartResponse.setData(countStatVOList.stream().map(CountStatVO::getCnt).collect(Collectors.toList()));
         chartResponse.setData2(countStatVOList.stream().map(CountStatVO::getCnt2).collect(Collectors.toList()));

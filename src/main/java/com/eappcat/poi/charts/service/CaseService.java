@@ -41,9 +41,11 @@ public class CaseService {
         if (!StringUtils.isEmpty(filterVO.getLevel1())){
             stringBuilder.append("level1 = ?");
             args.add(filterVO.getLevel1());
-        }else {
+        }else if (!StringUtils.isEmpty(filterVO.getLevel2())){
             stringBuilder.append("level2 = ?");
             args.add(filterVO.getLevel2());
+        }else {
+            stringBuilder.append("level1 is not null ");
         }
         if (filterVO.getStartDate()!=null){
             stringBuilder.append("and received_date >= ?");
