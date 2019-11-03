@@ -4,6 +4,7 @@ import com.example.poi.demo.service.CaseService;
 import com.example.poi.demo.vo.ChartResponse;
 import com.example.poi.demo.vo.CountStatVO;
 import com.example.poi.demo.vo.SelectFilterVO;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +24,7 @@ public class ReportController {
     private CaseService caseService;
 
     @GetMapping("/charts")
+    @ApiOperation("查询数据统计")
     public ChartResponse requestData(SelectFilterVO selectFilterVO){
         ChartResponse chartResponse=new ChartResponse();
         List<CountStatVO> countStatVOList = caseService.selectData(selectFilterVO,"tbl_case");
@@ -60,9 +62,10 @@ public class ReportController {
         return ResponseEntity.ok("ok");
     }
     @DeleteMapping("/clear")
+    @ApiOperation("清除数据库")
     public ResponseEntity<String> clear(){
         caseService.truncate("tbl_case");
-        caseService.truncate("tbl_case_2018");
+//        caseService.truncate("tbl_case_2018");
         return ResponseEntity.ok("ok");
     }
 }

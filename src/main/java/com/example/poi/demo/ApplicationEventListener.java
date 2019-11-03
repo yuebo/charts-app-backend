@@ -14,12 +14,14 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.event.EventListener;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.io.File;
 import java.io.InputStream;
 
 @Component
 @Slf4j
+@EnableSwagger2
 public class ApplicationEventListener {
     @Autowired
     private ApplicationContext applicationContext;
