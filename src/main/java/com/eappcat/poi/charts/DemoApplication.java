@@ -1,4 +1,4 @@
-package com.example.poi.demo;
+package com.eappcat.poi.charts;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

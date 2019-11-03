@@ -1,4 +1,4 @@
-package com.example.poi.demo.vo;
+package com.eappcat.poi.charts.vo;
 
 import lombok.Data;
 

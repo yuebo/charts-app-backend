@@ -1,6 +1,6 @@
-package com.example.poi.demo.dao;
+package com.eappcat.poi.charts.dao;
 
-import com.example.poi.demo.entity.CaseEntity;
+import com.eappcat.poi.charts.entity.CaseEntity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

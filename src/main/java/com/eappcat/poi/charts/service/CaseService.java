@@ -1,9 +1,8 @@
-package com.example.poi.demo.service;
+package com.eappcat.poi.charts.service;
 
-import com.example.poi.demo.dao.CaseDao;
-import com.example.poi.demo.entity.CaseEntity;
-import com.example.poi.demo.vo.CountStatVO;
-import com.example.poi.demo.vo.SelectFilterVO;
+import com.eappcat.poi.charts.entity.CaseEntity;
+import com.eappcat.poi.charts.vo.CountStatVO;
+import com.eappcat.poi.charts.vo.SelectFilterVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;

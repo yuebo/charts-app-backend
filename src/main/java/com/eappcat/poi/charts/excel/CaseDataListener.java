@@ -1,9 +1,9 @@
-package com.example.poi.demo.excel;
+package com.eappcat.poi.charts.excel;
 
 import com.alibaba.excel.context.AnalysisContext;
 import com.alibaba.excel.event.AnalysisEventListener;
-import com.example.poi.demo.entity.CaseEntity;
-import com.example.poi.demo.service.CaseService;
+import com.eappcat.poi.charts.entity.CaseEntity;
+import com.eappcat.poi.charts.service.CaseService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;

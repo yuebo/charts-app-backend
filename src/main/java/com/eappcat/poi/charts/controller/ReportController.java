@@ -1,9 +1,9 @@
-package com.example.poi.demo.controller;
+package com.eappcat.poi.charts.controller;
 
-import com.example.poi.demo.service.CaseService;
-import com.example.poi.demo.vo.ChartResponse;
-import com.example.poi.demo.vo.CountStatVO;
-import com.example.poi.demo.vo.SelectFilterVO;
+import com.eappcat.poi.charts.service.CaseService;
+import com.eappcat.poi.charts.vo.ChartResponse;
+import com.eappcat.poi.charts.vo.CountStatVO;
+import com.eappcat.poi.charts.vo.SelectFilterVO;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;

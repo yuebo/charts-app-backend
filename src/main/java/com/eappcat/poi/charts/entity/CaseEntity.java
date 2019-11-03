@@ -1,4 +1,4 @@
-package com.example.poi.demo.entity;
+package com.eappcat.poi.charts.entity;
 
 import com.alibaba.excel.annotation.ExcelProperty;
 import com.alibaba.excel.annotation.format.DateTimeFormat;
